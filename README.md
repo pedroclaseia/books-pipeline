@@ -100,27 +100,9 @@ text
 
 ## 🗂️ Estructura
 
-books-pipeline/
-├─ README.md
-├─ requirements.txt
-├─ .env.example
-├─ landing/
-│ ├─ goodreads_books.json
-│ └─ googlebooks_books.csv
-├─ standard/
-│ ├─ dim_book.parquet
-│ └─ book_source_detail.parquet
-├─ docs/
-│ ├─ schema.md
-│ └─ quality_metrics.json
-└─ src/
-├─ scrape_goodreads.py
-├─ enrich_googlebooks.py
-├─ integrate_pipeline.py
-├─ utils_quality.py
-└─ utils_isbn.py
 
-text
+![ESTRUCTURA](foto.png)
+
 
 Notas:
 - `landing/` es de solo lectura en la fase de integración.
@@ -192,7 +174,3 @@ Se aceptan PRs:
 - Tests automatizados y CI
 
 ---
-
-## 📜 Licencia
-
-MIT. Incluye un archivo `LICENSE` si vas a publicarlo de forma abierta.

@@ -1,0 +1,102 @@
+{
+  "metadata": {
+    "source": "goodreads_search",
+    "search_query": "data science",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "fetched_at_utc": "2025-11-16T19:02:05+00:00",
+    "total": 10,
+    "url": "https://www.goodreads.com/search?q=data+science"
+  },
+  "records": [
+    {
+      "title": "Data Science for Business: What You Need to Know about Data Mining and Data-Analytic Thinking",
+      "author": "Foster Provost",
+      "rating": 4.13,
+      "ratings_count": 2623,
+      "book_url": "https://www.goodreads.com/book/show/17912916-data-science-for-business?from_search=true&from_srp=true&qid=dZA1Dc765A&rank=1",
+      "isbn10": null,
+      "isbn13": null
+    },
+    {
+      "title": "Data Smart: Using Data Science to Transform Information into Insight",
+      "author": "John W. Foreman",
+      "rating": 4.12,
+      "ratings_count": 1015,
+      "book_url": "https://www.goodreads.com/book/show/17682206-data-smart?from_search=true&from_srp=true&qid=dZA1Dc765A&rank=2",
+      "isbn10": null,
+      "isbn13": null
+    },
+    {
+      "title": "Data Science from Scratch: First Principles with Python",
+      "author": "Joel Grus",
+      "rating": 3.91,
+      "ratings_count": 1135,
+      "book_url": "https://www.goodreads.com/book/show/25407018-data-science-from-scratch?from_search=true&from_srp=true&qid=dZA1Dc765A&rank=3",
+      "isbn10": null,
+      "isbn13": null
+    },
+    {
+      "title": "Mindmasters: The Data-Driven Science of Predicting and Changing Human Behavior",
+      "author": "Sandra Matz",
+      "rating": 4.04,
+      "ratings_count": 288,
+      "book_url": "https://www.goodreads.com/book/show/205905685-mindmasters?from_search=true&from_srp=true&qid=dZA1Dc765A&rank=4",
+      "isbn10": null,
+      "isbn13": null
+    },
+    {
+      "title": "R for Data Science: Import, Tidy, Transform, Visualize, and Model Data",
+      "author": "Hadley Wickham",
+      "rating": 4.54,
+      "ratings_count": 1209,
+      "book_url": "https://www.goodreads.com/book/show/33399049-r-for-data-science?from_search=true&from_srp=true&qid=dZA1Dc765A&rank=5",
+      "isbn10": null,
+      "isbn13": null
+    },
+    {
+      "title": "Doing Data Science: Straight Talk from the Frontline",
+      "author": "Cathy O'Neil",
+      "rating": 3.74,
+      "ratings_count": 570,
+      "book_url": "https://www.goodreads.com/book/show/17346997-doing-data-science?from_search=true&from_srp=true&qid=dZA1Dc765A&rank=6",
+      "isbn10": null,
+      "isbn13": null
+    },
+    {
+      "title": "Numsense! Data Science for the Layman: No Math Added",
+      "author": "Annalyn Ng",
+      "rating": 4.14,
+      "ratings_count": 615,
+      "book_url": "https://www.goodreads.com/book/show/34213247-numsense-data-science-for-the-layman?from_search=true&from_srp=true&qid=dZA1Dc765A&rank=7",
+      "isbn10": null,
+      "isbn13": null
+    },
+    {
+      "title": "Python Data Science Handbook: Essential Tools for Working with Data",
+      "author": "Jake VanderPlas",
+      "rating": 4.3,
+      "ratings_count": 661,
+      "book_url": "https://www.goodreads.com/book/show/26457146-python-data-science-handbook?from_search=true&from_srp=true&qid=dZA1Dc765A&rank=8",
+      "isbn10": null,
+      "isbn13": null
+    },
+    {
+      "title": "Data Science (The MIT Press Essential Knowledge series)",
+      "author": "John D. Kelleher",
+      "rating": 3.9,
+      "ratings_count": 851,
+      "book_url": "https://www.goodreads.com/book/show/36722689-data-science?from_search=true&from_srp=true&qid=dZA1Dc765A&rank=9",
+      "isbn10": null,
+      "isbn13": null
+    },
+    {
+      "title": "Becoming a Data Head: How to Think, Speak, and Understand Data Science, Statistics, and Machine Learning",
+      "author": "Alex J. Gutman",
+      "rating": 4.22,
+      "ratings_count": 423,
+      "book_url": "https://www.goodreads.com/book/show/56357967-becoming-a-data-head?from_search=true&from_srp=true&qid=dZA1Dc765A&rank=10",
+      "isbn10": null,
+      "isbn13": null
+    }
+  ]
+}

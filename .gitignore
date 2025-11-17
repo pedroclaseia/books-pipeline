@@ -1,0 +1,15 @@
+# Python        
+__pycache__/
+*.pyc 
+.venv/
+src/__pycache__/
+
+# Daros / Salidas
+Landin/*.csv
+Landin/*.json
+standard/*.parquet
+docs/*.json
+docs/*.md
+
+# OS
+.DS_Store

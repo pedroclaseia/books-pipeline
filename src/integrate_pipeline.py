@@ -352,11 +352,27 @@ def canonicalize(gr_df, gb_df):
         if c not in can.columns:
             can[c] = None
 
-    # Orden final de columnas en dim_book
+    # NUEVO: columna final 'autor/es' como string a partir de la lista 'autores'
+    can["autor/es"] = can["autores"].map(
+        lambda xs: ";".join(xs) if isinstance(xs, list) and xs else None
+    )
+
+    # Selección final de columnas para dim_book:
+    # sin titulo_normalizado, sin autor_principal ni autores; solo autor/es
     can = can[[
-        "book_id","titulo","titulo_normalizado","autor_principal","autores",
-        "editorial","fecha_publicacion","idioma","isbn10","isbn13","categoria",
-        "precio","moneda","fuente_ganadora","ts_ultima_actualizacion"
+        "book_id",
+        "titulo",
+        "autor/es",
+        "editorial",
+        "fecha_publicacion",
+        "idioma",
+        "isbn10",
+        "isbn13",
+        "categoria",
+        "precio",
+        "moneda",
+        "fuente_ganadora",
+        "ts_ultima_actualizacion"
     ]]
     return can
 
@@ -412,9 +428,7 @@ def write_outputs(can_df, source_detail_df):
 Campos:
 - book_id (string, not null)
 - titulo (string)
-- titulo_normalizado (string)
-- autor_principal (string)
-- autores (list<string>)
+- autor/es (string)  # autores separados por ';'
 - editorial (string)
 - fecha_publicacion (date ISO-8601)
 - idioma (BCP-47)
@@ -428,9 +442,9 @@ Campos:
 
 
 Reglas:
-- ID preferente isbn13; si falta, hash estable de (titulo_normalizado, autor_principal, editorial, fecha_publicacion).
+- ID preferente isbn13; si falta, se genera un identificador estable a partir de título, autor y otros campos clave.
 - Supervivencia: más campos completos; preferencia Google Books para título/precio.
-- Listas unidas y de-duplicadas.
+- Las listas (como categoria) se unen y de-duplican; los autores se exponen en 'autor/es' como texto.
 """
     schema_path.write_text(schema_md, encoding="utf-8")
 

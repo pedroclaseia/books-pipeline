@@ -1,0 +1,21 @@
+googlebooks_meta.json : archivo de metadatos que describe cómo se generó el fichero 
+-"separator": "," dice que el separador de columnuas se hace por una coma (csv)
+-"generated_at_utc": "2025-11-18T00:13:27+00:00" dice la hora exacta en la cual se creo el (csv)
+
+goodreads_books.json : es el archivo donde tu al scrapear guarda los resultados de la búsqueda en Goodreads y un pequeño bloque de metadatos sobre la extracción
+-"metadata": guardo la trazabilidad: de dónde he sacado los libros, qué búsqueda hice, con qué navegador me identifiqué (si tengo tiempo modificar para que me salga en otro lado y tambien hacer lo de una pausa y que sean mas de 10 libros)
+-"records" : forma en la cual los libros van a tener su extructura.
+
+googlebooks_books.csv : es el fichero donde guardas, en formato tabla, la información que te devuelve la API de Google Books para cada libro que venía de Goodreads.
+
+quality_metrics.json : es un pequeño informe de calidad de datos sobre tu tabla final dim_book.parquet 
+-"pct_null_titulo": Porcentaje de filas en dim_book que no tienen título rellenado. (0.0) es que todos los libros tiene titulo
+-"pct_null_isbn13": 0.0 : porcentaje de libros sin isbn13
+-"pct_null_price_amount": 71.43 : Porcentaje de libros sin precio (price_amount) informado tras la integración.
+71.43 quiere decir que aproximadamente 5 de los 7 libros no tienen precio 
+-"duplicates_found": 0 : Cantidad de IDs de fuente repetidos detectados en book_source_detail
+-"rows_per_source": { "goodreads": 10, "googlebooks": 7 }
+Cuenta cuántas filas venían de cada fuente en el detalle original (book_source_detail), antes de consolidar.
+
+dim_book.parquet : es tu tabla final de libros, ya integrada, limpiada y normalizada 
+

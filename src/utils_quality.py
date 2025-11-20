@@ -32,9 +32,9 @@ CURRENCY_RE = re.compile(r"^[A-Z]{3}$")
 def norm_date_iso(s: str):
     """
     Recibe una fecha en forma de texto y la convierte a:
-      - 'YYYY-01-01' si solo se ha dado el año
-      - 'YYYY-MM-01' si se ha dado año y mes
-      - 'YYYY-MM-DD' si se ha dado la fecha completa
+    - 'YYYY-01-01' si solo se ha dado el año
+    - 'YYYY-MM-01' si se ha dado año y mes
+    - 'YYYY-MM-DD' si se ha dado la fecha completa
     Si el formato no es válido o la fecha no existe, devuelve None.
     """
     if not s:
@@ -69,8 +69,8 @@ def norm_date_iso(s: str):
 def norm_lang_bcp47(s: str):
     """
     Recibe un código de idioma (ej. 'es', 'en-US') y devuelve:
-      - el mismo código si cumple el patrón BCP-47
-      - None si no es válido
+    - el mismo código si cumple el patrón BCP-47
+    - None si no es válido
     """
     if not s:
         return None
@@ -83,8 +83,8 @@ def norm_lang_bcp47(s: str):
 def norm_currency_iso4217(s: str):
     """
     Recibe un código de moneda y devuelve:
-      - el código en mayúsculas si tiene 3 letras (ej. EUR, USD)
-      - None si no cumple el patrón.
+    - el código en mayúsculas si tiene 3 letras (ej. EUR, USD)
+    - None si no cumple el patrón.
     """
     if not s:
         return None

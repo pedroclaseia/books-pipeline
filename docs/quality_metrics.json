@@ -1,0 +1,11 @@
+{
+  "total_dim_book": 6,
+  "pct_null_titulo": 0.0,
+  "pct_null_isbn13": 0.0,
+  "pct_null_price_amount": 83.33,
+  "rows_per_source": {
+    "goodreads": 10,
+    "googlebooks": 6
+  },
+  "duplicates_found": 0
+}

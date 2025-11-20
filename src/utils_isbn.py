@@ -144,8 +144,8 @@ def ensure_best_isbn_columns(df, isbn13_cols=None, isbn10_cols=None, out13="best
     """
     Dado un DataFrame (tabla) que puede tener varias columnas con ISBN,
     crea de forma segura dos columnas estándar:
-      - best_isbn13
-      - best_isbn10
+    - best_isbn13
+    - best_isbn10
 
     Busca los valores en las columnas indicadas, escoge el mejor ISBN
     para cada fila y evita errores aunque falten columnas.

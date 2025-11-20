@@ -47,9 +47,9 @@ GB_ENDPOINT = "https://www.googleapis.com/books/v1/volumes"
 def _norm_list(xs):
     """
     Recibe una lista (o un valor suelto) y devuelve:
-      - una lista sin elementos vacíos
-      - sin duplicados
-      - con los textos limpiados de espacios.
+    - una lista sin elementos vacíos
+    - sin duplicados
+    - con los textos limpiados de espacios.
     Se usa para autores y categorías.
     """
     if not xs:
